@@ -1,1 +1,68 @@
+//Buttons
+
+.btn button{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #22283A;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    .buttonShape(@deskPad, @deskWidth);
+
+    &:hover{
+        background-color: #FFFFFF;
+        color:#22283A;
+    }
+
+    @media @phone{
+        .buttonShape(@lapPad, @lapWidth); //flexbox issue?
+        margin: 0;
+
+        button{
+        align-self: center;
+        }
+    }
+}
+
+
 // Navigation code here
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    background-color: #F6F6F6;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+
+    h1{
+        font-size: 4rem;
+        width: 100%;
+        padding: .5%;
+    }
+
+
+    nav{
+        display: flex;
+        width:60%;
+        justify-content: space-evenly;
+        padding: .5%;
+        
+        @media @phone {
+            width:80%;
+            justify-content: space-between;
+            padding: 2%;
+        }
+    }
+
+
+    a{
+        font-size: 1.6rem;
+        text-decoration: none;
+        color:@main-font-color;
+    }
+
+    
+}
