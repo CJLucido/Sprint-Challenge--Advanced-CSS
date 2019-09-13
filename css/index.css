@@ -253,6 +253,7 @@ footer {
 .home .intro .main-header {
   border-radius: 5px;
   width: 100%;
+  margin: 11% auto 0;
 }
 @media (max-width: 500px) {
   .home .intro .main-header {
