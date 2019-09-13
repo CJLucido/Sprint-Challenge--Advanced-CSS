@@ -208,7 +208,7 @@ p {
 }
 .navigation nav {
   display: flex;
-  width: 60%;
+  width: 50%;
   justify-content: space-evenly;
   padding: 0.5%;
 }
@@ -243,16 +243,17 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+  margin-top: 4%;
 }
 .home .intro p {
   padding: 0 15px;
 }
-.home .intro img.main-header {
+.home .intro .main-header {
   border-radius: 5px;
   width: 100%;
 }
 @media (max-width: 500px) {
-  .home .intro img.main-header {
+  .home .intro .main-header {
     width: 100%;
     margin: 0 auto;
   }
@@ -272,11 +273,14 @@ footer {
   .home .space-images {
     width: 90%;
     flex-direction: column;
+    align-items: center;
     margin: 0;
   }
   .home .space-images img {
     width: 100%;
     margin: 0;
+    padding-top: 4%;
+    border-radius: 20px;
   }
   .home .space-images p {
     width: 100%;
@@ -330,8 +334,9 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    padding: 5% 0;
+    margin: 5% 0;
   }
   .home .walk .walk-text {
     width: 90%;
@@ -340,5 +345,6 @@ footer {
   .home .walk .walk-img {
     width: 90%;
     margin: 0;
+    margin-bottom: 4%;
   }
 }
