@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive allows for use of media break points or layout changes based on rules/conditions. Adaptive requires many templates to match different devices. Fully responsive websites only require one template. They use aspects of fixed, fluid (percentages), and adaptive to completely do away with the horizontal horror bar and look good across devices.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means designing a website with a mobile layout in mind as a starting point/originally. It requires use of media queries that start at a minimum width of the layout, letting the code know to change the css styles as the layout grows into it. Desktop first means designing a website with a desktop layout in mind as a starting point. It requires media queries that start at their maximum range or max-width, letting the code know to change as the layout shrinks into it. minimum width starts and goes to inifinity, maximum width is the end of what came from zero. Media queries can be stacked within other layouts (max-width within a larger max-width).
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The default font-size across most browsers is 16px. 62.5% of 16px is 10px. Setting the font-size in the html to the equivalent of 10px makes it easier to do the math when applying rems/root ems in the rest of the document.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is the ability to make raw CSS more simple using language that lumps syntax together, this lumping is compiling. It consumes what is easier for us to write and uses that to produce "hardcoded CSS", a much more split up product. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is parametric mixins, I like it because I like to be able to do multiple things at once or get a lot done quickly, but I also like to have control of changing the rules on a case by case basis (I don't like pidgeon holing unique situations). The concept that gives me the most difficulty practically is variables, because it seems like a rabbit hole of switchbacks can be made with too many reassignments. The concept that gives me the most difficulty theoretically is escaping. It's easy enough to understand as a technique or style (a rule is simplified to a word/parameter but can also act as a selector if necessary), I just don't know what we are "escaping", constraints? Or is it just that the tilde is ignored?
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
