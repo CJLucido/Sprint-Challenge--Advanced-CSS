@@ -201,6 +201,7 @@ p {
   margin: 0 auto;
   text-align: center;
   position: fixed;
+  opacity: 0.9;
 }
 .navigation h1 {
   font-size: 4rem;
@@ -256,7 +257,7 @@ footer {
 @media (max-width: 500px) {
   .home .intro .main-header {
     width: 100%;
-    margin: 0 auto;
+    margin: 17% auto 0;
   }
 }
 .home .space-images {
@@ -273,21 +274,22 @@ footer {
 @media (max-width: 500px) {
   .home .space-images {
     width: 90%;
+    margin: 0;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
   }
   .home .space-images img {
     width: 100%;
     margin: 0;
+    padding: 0;
     padding-top: 4%;
-    border-radius: 20px;
   }
   .home .space-images p {
     width: 100%;
   }
   .home .space-images .blast {
-    width: 90%;
+    width: 100%;
     margin: 0;
   }
   .home .space-images .sky {
