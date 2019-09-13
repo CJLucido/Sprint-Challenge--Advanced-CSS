@@ -200,6 +200,7 @@ p {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  position: fixed;
 }
 .navigation h1 {
   font-size: 4rem;
